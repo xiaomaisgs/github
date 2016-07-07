@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SetSexChooseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nL-q6-yLb">
+                        <rect key="frame" x="15" y="10" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="9Z0-Dx-hKc"/>
+                            <constraint firstAttribute="height" constant="24" id="wNZ-lB-fBS"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="Setting_SexChoose_Normal"/>
+                        <state key="selected" image="Setting_SexChoose_Selected"/>
+                        <connections>
+                            <action selector="manSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xft-je-qbM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgi-AV-yle">
+                        <rect key="frame" x="80" y="10" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="AW7-7g-boz"/>
+                            <constraint firstAttribute="height" constant="24" id="BeO-Js-kp0"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="Setting_SexChoose_Normal"/>
+                        <state key="selected" image="Setting_SexChoose_Selected"/>
+                        <connections>
+                            <action selector="womanSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SrU-Oi-1CV"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cb-hw-lMS">
+                        <rect key="frame" x="109" y="10" width="20" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="2Qm-dF-7NN"/>
+                            <constraint firstAttribute="height" constant="24" id="AID-na-N6j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EO-68-pZl">
+                        <rect key="frame" x="45" y="10" width="20" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="PIK-VO-cFJ"/>
+                            <constraint firstAttribute="width" constant="20" id="fu0-VY-312"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mgi-AV-yle" firstAttribute="leading" secondItem="1nL-q6-yLb" secondAttribute="trailing" constant="5" id="7cs-ky-v4S"/>
+                    <constraint firstItem="mgi-AV-yle" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IOO-Vj-tvo"/>
+                    <constraint firstItem="2Cb-hw-lMS" firstAttribute="leading" secondItem="1nL-q6-yLb" secondAttribute="trailing" constant="34" id="X5I-1l-UKg"/>
+                    <constraint firstItem="2Cb-hw-lMS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xvj-DC-DFE"/>
+                    <constraint firstItem="1nL-q6-yLb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="aSf-us-TYu"/>
+                    <constraint firstItem="8EO-68-pZl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="37" id="h3o-EY-Htp"/>
+                    <constraint firstItem="8EO-68-pZl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qrq-iP-WQf"/>
+                    <constraint firstItem="1nL-q6-yLb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yLH-1Y-d3b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="manButton" destination="1nL-q6-yLb" id="fuo-E8-tjj"/>
+                <outlet property="womanButton" destination="mgi-AV-yle" id="d29-lD-789"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="294"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Setting_SexChoose_Normal" width="24" height="24"/>
+        <image name="Setting_SexChoose_Selected" width="24" height="24"/>
+    </resources>
+</document>

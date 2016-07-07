@@ -1,0 +1,21 @@
+//
+//  Health.pch
+//  Health
+//
+//  Created by 张涛 on 16/6/2.
+//  Copyright © 2016年 张涛. All rights reserved.
+//
+
+#ifndef Health_pch
+#define Health_pch
+
+#import <UIKit/UIKit.h>
+#import "GlobalApi.h"
+#import "GlobalDef.h"
+#import "GlobalClass.h"
+#import "UITools.h"
+#import "UToolBox.h"
+#import "MBProgressHUD.h"
+#import "UserCenter.h"
+
+#endif /* Health_pch */
